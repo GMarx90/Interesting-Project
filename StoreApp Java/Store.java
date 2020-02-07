@@ -4,9 +4,9 @@ import java.util.*;
 public class Store{
 private LinkedList offert = new LinkedList();
 public Item item;
-public void addItem(Intiger id, String name, String price, String quantity){
+public void addItem(Intiger id, String name, String price, String quantity, boolean noDiscount){
     
-Item item = new Item (id, name, price, quantity);
+Item item = new Item (id, name, price, quantity, noDiscount);
     offert.add(item);
 }
 
