@@ -1,24 +1,25 @@
-
 import java.util.*;
 
-public class Store{
-private LinkedList offert = new LinkedList();
-public Item item;
-public void addItem(Intiger id, String name, String price, String quantity, boolean noDiscount){
-    
-Item item = new Item (id, name, price, quantity, noDiscount);
-    offert.add(item);
-}
+public class Store {
+    private LinkedList catalog = new LinkedList();
 
-   public Item getItem(int i) {
-        return (Item) offert.get(i);
+    public void addItem(String id, String name, String price,
+                        String quant, String discount) {
+
+        Item it = new Item(id, name, price, quant, discount);
+        catalog.add(it);
     }
-    
-    public int getSize(){
-        return offert.size;
+
+    public Item getItem(int i) {
+        return (Item)catalog.get(i);
     }
-  public void sort() {
-        Collections.sort(offert);
+
+    public int getSize() {
+        return catalog.size();
+    }
+
+    public void sort() {
+        Collections.sort(catalog);
     }
 }
 
