@@ -1,4 +1,7 @@
+import lombok.Getter;
 
+
+@Getter
 public class Item implements Comparable {
     private String id;
     private String name;
@@ -36,24 +39,24 @@ public class Item implements Comparable {
         }
         return 0;
     }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getRetail() {
-        return retail;
-    }
-
-    public int getQuantity() {
-        return quantity;
-    }
-
-    public double getPrice() {
-        return price;
-    }
+//
+//    public String getId() {
+//        return id;
+//    }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public double getRetail() {
+//        return retail;
+//    }
+//
+//    public int getQuantity() {
+//        return quantity;
+//    }
+//
+//    public double getPrice() {
+//        return price;
+//    }
 }
